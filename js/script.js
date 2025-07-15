@@ -1,11 +1,12 @@
 
-const links = document.querySelectorAll('.nav-link');
+const links = document.querySelectorAll('.nav-link[data-section]');
 const sections = document.querySelectorAll('.content-section');
 
 links.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
     const targetId = link.getAttribute('data-section');
+    if (!targetId) return;
+    e.preventDefault();
 
     // Esconde todas as secções
     sections.forEach(section => section.classList.add('d-none'));
@@ -13,8 +14,10 @@ links.forEach(link => {
     // Mostra a secção clicada
     document.getElementById(targetId).classList.remove('d-none');
 
-    // Atualiza estado ativo
+    // Remove classe de todos
     links.forEach(l => l.classList.remove('active'));
+
+    // Adiciona ao clicado
     link.classList.add('active');
   });
 });

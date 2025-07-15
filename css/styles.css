@@ -1,3 +1,90 @@
+body {
+  padding-top:90px; /* Ajusta conforme a altura da tua navbar */
+  background-color: #0f1217; /* azul escuro, quase preto */
+  color: #cfd3d7; /* texto cinzento claro */
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+
+}
+
+
+.card{
+  background-color: #cfd3d7;
+}
+.card h4,.card h6{
+    color: #0f1217;
+}
+
+.card p{
+  color: #4a90e2;
+}
+
+.box{
+  border-radius: 7px;
+  background-color: #2f3437; /* cinzento escuro, mais suave e integrado */
+  color: #e0e0e0;           /* texto claro para contraste */
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color:white;
+  font-size: 0.75rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #4a90e2; /* fundo azul translúcido leve */
+  color: #ffffff; /* azul vibrante no texto */
+  padding: 5px 15px; /* mesmo padding da navbar para efeito igual */
+  border-radius: 7px; /* bordas arredondadas como a navbar */
+}
+
+
+
+
+.navbar {
+  background-color: #2f3437;
+  border-bottom: 2px solid #4a90e2;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.15);
+}
+
+.navbar .nav-link {
+  color: #cfd3d7;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #4a90e2;
+  background-color: rgba(74, 144, 226, 0.15);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+
+
+.title-1 {
+  position: relative;
+  display: inline-block;
+  color: #cfd3d7;
+  font-weight: bold;    /* Negrito */
+  font-size: 2rem;    /* Tamanho ajustável */
+  margin-bottom: 1rem;
+}
+.title-1::after {
+  content: "";
+  display: block;
+  width: 40px;         /* Largura da barra */
+  height: 4px;         /* Altura da barra */
+  background-color: #4a90e2;
+  margin-top: 8px;     /* Espaço entre texto e barra */
+  border-radius: 2px;  /* Cantos arredondados */
+}
+
+
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
   position: relative;
@@ -8,7 +95,7 @@
   content: "";
   position: absolute;
   width: 3px;
-  background-color: #26c6da;
+  background-color: #4a90e2;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -29,7 +116,7 @@
   width: 25px;
   height: 25px;
   right: -11px;
-  background-color: #26c6da;
+  background-color: #4a90e2;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -54,10 +141,13 @@
   top: 18px;
   z-index: 1;
   right: 30px;
-  border: medium solid rgb(255, 0, 0);
+  border: medium solid #4a90e2;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgb(255, 0, 0);
+  border-color: transparent transparent transparent #4a90e2;
 }
+
+
+
 
 /* setas na direita (pointing left) */
 .right-2::before {
@@ -66,9 +156,9 @@
   top: 18px;
   z-index: 1;
   left: 30px;
-  border: medium solid rgb(255, 0, 0);
+  border: medium solid #4a90e2;
   border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(255, 0, 0) transparent transparent;
+  border-color: transparent #4a90e2 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -93,9 +183,9 @@
   /* Make sure that all arrows are pointing leftwards */
   .timeline-2::before {
     left: 60px;
-    border: medium solid rgb(255, 0, 0);
+    border: medium solid #4a90e2;
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(255, 0, 0) transparent transparent;
+    border-color: transparent #4a90e2 transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -114,3 +204,31 @@
   }
 }
 
+
+
+
+ /*botao*/
+.btn-custom {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+
+.btn-custom:hover {
+  background-color: #3a78c2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.4);
+}
+
+.btn-custom:active {
+  background-color: #3368a8;
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(74, 144, 226, 0.2);
+}
