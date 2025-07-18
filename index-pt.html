@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/logo_eu.jpg" type="image/x-icon" content="IE=edge">
   <title>João Cerqueira | Portfolio</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -127,8 +128,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#" data-section="contacts">Contactos</a>
           </li>
-
-
         </ul>
       </div>
     </div>
@@ -167,11 +166,10 @@
     </div>
   </section>
 
-
   <section id="about" class="content-section d-none">
     <div class="container py-5">
       <h3 class="title-1">Sobre mim</h3>
-      <p>Sou um Engenheiro de Software com 2 anos de experiência profissional no desenvolvimento de soluções que
+      <p >Sou um Engenheiro de Software com 2 anos de experiência profissional no desenvolvimento de soluções que
         integram automação, inteligência artificial e integrações de sistemas, utilizando tecnologias como Python,
         OutSystems e Tibco.</p>
       <p>Atualmente, estou envolvido num projeto de integração de sistemas utilizando Tibco para garantir uma
@@ -179,48 +177,61 @@
         A área com que mais me identifico é a de desenvolvimento backend, focando-me na implementação de APIs,
         integração de sistemas e desenvolvimento de lógica de negócio robusta e escalável.</p>
       <p>Pretendo continuar a crescer profissionalmente e a abraçar novos desafios tecnológicos.</p>
+      
+      <div class="row">
+        <div class="col-md-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidade:</strong><span> Portuguesa</span></li>   
+              <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong><span> 23</span></li>    
+            </ul>
+        </div>
+                <div class="col-md-6">
+                  <ul>
+          <li><i class="bi bi-chevron-right"></i> <strong>Grau Académico:</strong><span> Licenciado em Engenharia Informática </span></li>
+          
+      </ul>
+        </div>
+        </div>
 
-
+      
       <h5 class="title-1">Skills</h5>
-
       <div class="row">
         <div class="col-6 pb-3">
-          <span>Outsystems</span>
+          <span>Outsystems <span style="float: right;">90%</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
               aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>Python</span>
+          <span>Python <span style="float: right;">80%</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>Tibco</span>
+          <span>Tibco <span style="float: right;">70%</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>Rest Api</span>
+          <span>Rest Api <span style="float: right;">90%</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>SQL Server</span>
+          <span>SQL Server <span style="float: right;">80%</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
           </div>
         </div>
       </div>
-
   </section>
 
   <section id="experience" class="content-section d-none">
@@ -245,7 +256,7 @@
               <p class=" mb-4">Dez 2024 - o momento</p>
               <ul>
                 <li><b>Automação</b>-
-                  <p>
+                  <div class="technologies">
                   <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px;"> OutSystems</div>
                   <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
@@ -256,12 +267,12 @@
                       style="height: 24px; width: 40px;"> EZ4U</div>
                   <div class="box"><img src="images/Postman.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px; "> Postman</div>
-                  </p>
+                  
                 </li>
                 <li><b>Integrações de Sistemas </b>-
-                  <p>
+                  <div class="technologies">
                   <div class="box"><img src="images/tibco.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Tibco</div>
+                      style="height: 24px; width: 24px;"> Tibco </div>
                   <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px;"> OutSystems</div>
                   <div class="box"><img src="images/rabbitmq.png" class="card-img-top" alt="..."
@@ -272,7 +283,7 @@
                       style="height: 24px; width: 24px; "> SqlServer</div>
                   <div class="box"><img src="images/Postman.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px; "> Postman</div>
-                  </p>
+                  </div>
                 </li>
               </ul>
 
@@ -300,17 +311,17 @@
                 <li>
                   <b>Replicação de base de dados</b> - Desenvolvimento de solução para replicar dados, em tempo real, de
                   um servidor de produção para um novo servidor.
-                  <p>
+                  <div class="technologies">
                   <div class="box"><img src="images/symmetricDs.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 20px;"> SymmetricDS</div>
                   <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px; "> SqlServer</div>
-                  </p>
+                  </div>
                 </li>
                 <li>
                   <b>ChatBot</b> - Implementação de um chatbot capaz de processar um arquivo Excel, permitindo ao
                   utilizador realizar perguntas sobre os dados contidos.
-                  <p>
+                  <div class="technologies">
                   <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px;"> Python</div>
                   <div class="box"><img src="images/streamlit.png" class="card-img-top" alt="..."
@@ -319,13 +330,13 @@
                       style="height: 24px; width: 24 px;"> OpenAi</div>
                   <div class="box"><img src="images/docker.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px;"> Docker</div>
-                  </p>
+                  </div>
                 </li>
                 <li>
                   <b>Automação usando IA</b>- Desenvolvimento de uma ferramenta para classificação e extração de dados,
                   facilitando o preenchimento automático de informações necessárias para a criação de spots (pedidos de
                   cotação de transportes).
-                  <p>
+                  <div class="technologies">
                   <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px;"> OutSystems</div>
                   <div class="box"><img src="images/openai.png" class="card-img-top" alt="..."
@@ -334,7 +345,7 @@
                       style="height: 24px; width: 28px;"> Microsoft Graph API</div>
                   <div class="box"><img src="images/blujay.png" class="card-img-top" alt="..."
                       style="height: 24px; width: 24px;"> BluJay</div>
-                  </p>
+                  </div>
                 </li>
               </ul>
 
@@ -361,12 +372,12 @@
               <ul>
                 <li><b>Classificação de tickets</b> - Processamento do texto de tickets e de linguagem natural
                   para encontrar palavras chaves e associar a empresa correspondente ao ticket.</li>
-                <p>
+                <div class="technologies">
                 <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
                     style="height: 24px; width: 24x;"> Python</div>
                 <div class="box"><img src="images/powerBI.png" class="card-img-top" alt="..."
                     style="height: 24px; width: 24x;">PowerBi</div>
-                </p>
+                </div>
               </ul>
               </p>
             </div>
@@ -394,6 +405,16 @@
                   website é totalmente responsivo, suporta vários idiomas e adapta-se ao modo claro ou escuro,
                   garantindo uma experiência agradável em qualquer dispositivo. Foi criado para apresentar de forma
                   clara o meu percurso profissional, competências e projetos.</p>
+                  <div class="technologies">
+                    <div class="box"><img src="images/html.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">HTML</div>
+                      <div class="box"><img src="images/Bootstrap.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">Bootstrap</div>
+                      <div class="box"><img src="images/JavaScript.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">JavaScript</div>
+                      <div class="box"><img src="images/CSS.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">CSS</div>
+                  </div>
                 <a href="https://github.com/JoaooCerqueira/Portfolio" class="btn btn-primary btn-custom">Saber mais</a>
               </div>
             </div>
@@ -401,12 +422,12 @@
           <div class="col-sm-4">
             <div class="card">
               <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style p-4" alt="..." style="height: 18rem;">
+                <img src="images/Rental-car-Python.png" class="card-img-top img-style p-4" alt="..." style="height: 18rem;">
               </div>
               <div class="card-body">
-                <h5 class="card-title">Título</h5>
+                <h5 class="card-title">Rental Car</h5>
                 <p class="card-text">Descrição</p>
-                <a href="#" class="btn btn-primary btn-custom">Saber mais</a>
+                <a href="https://github.com/JoaooCerqueira/Projeto_RentalCar" class="btn btn-primary btn-custom">Saber mais</a>
               </div>
             </div>
           </div>
@@ -416,45 +437,7 @@
                 <img src="images/teste.png" class="card-img-top img-style p-4" alt="..." style="height: 18rem;">
               </div>
               <div class="card-body">
-                <h5 class="card-title">Título</h5>
-                <p class="card-text">Descrição</p>
-                <a href="#" class="btn btn-primary btn-custom">Saber mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-3">
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style p-4" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Título</h5>
-                <p class="card-text">Descrição</p>
-                <a href="#" class="btn btn-primary btn-custom">Saber mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style p-4" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Título</h5>
-                <p class="card-text">Descrição</p>
-                <a href="#" class="btn btn-primary btn-custom">Saber mais</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style p-4" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Título</h5>
+                <h5 class="card-title">ChatBot</h5>
                 <p class="card-text">Descrição</p>
                 <a href="#" class="btn btn-primary btn-custom">Saber mais</a>
               </div>
@@ -466,36 +449,35 @@
   </section>
 
   <section id="contacts" class="content-section d-none">
-
-    <div class="container-fluid py-5 ">
+    <div class="container py-5 ">
       <div class="row">
         <div class="col-12 col-lg-4">
           <h2 class="title-1">Contactos</h2>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope"
+          <div class="pb-3 pt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope contacts"
               viewBox="0 0 16 16">
               <path
                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
             </svg>
-            <a class="text-reset text-decoration-none"
+            <a class="text-reset text-decoration-none p-2"
               href="mailto:joao.p.caldas.cerqueira@gmail.com">joao.p.caldas.cerqueira@gmail.com</a>
           </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone"
+          <div class="pb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone contacts"
               viewBox="0 0 16 16">
               <path
                 d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
             </svg>
-            +351 933 372 373
+            <span class="p-2">+351 933 372 373</span>
           </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class=" bi bi-geo-alt"
+          <div class="pb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class=" bi bi-geo-alt contacts"
               viewBox="0 0 16 16">
               <path
                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
               <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
             </svg>
-            Maia, Porto
+            <span class="p-2">Maia, Porto</span>
           </div>
         </div>
 
