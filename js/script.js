@@ -13,6 +13,12 @@ links.forEach(link => {
 
     // Mostra a secção clicada
     document.getElementById(targetId).classList.remove('d-none');
+    
+    //scrool up 
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
 
     // Remove classe de todos
     links.forEach(l => l.classList.remove('active'));
