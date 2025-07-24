@@ -6,18 +6,22 @@
   --navbar-color-secondary: #4a90e2;
   --text-color-secondary: #4a90e2;
   --body-color: #0f1217;
+  --card-text-color:#0f1217;
   --navbar-color-third: rgba(74, 144, 226, 0.15);
+  --btn-text-color: #cfd3d7;
 }
-
+/* rgba(255,255,255,0.15) */
 body.light-theme {
   --text-color: #0f1217;
-  --card-color: #2f3437;
+  --card-color: rgba(0, 119, 255, 0.15);
   --input-color: white;
   --navbar-color-primary:#ffffff;
   --navbar-color-secondary: #4a90e2;
   --text-color-secondary: #cfd3d7;
   --body-color: #cfd3d7;
-  --navbar-color-third: rgba(74, 144, 226, 0.15);
+  --card-text-color:#0f1217;
+  --navbar-color-third: rgba(0, 119, 255, 0.15);
+  --btn-text-color: #cfd3d7;
 }
 
 
@@ -47,7 +51,8 @@ body {
   background-color: var(--card-color);
   overflow: hidden;
   border-radius: 1rem; 
-  color:var(--body-color);
+  border-color: var(--body-color);
+  color:var(--card-text-color);
 }
 
 .img-style{
@@ -62,11 +67,11 @@ body {
 
 
 .card h4,.card h6{
-    color: var(--body-color);
+    color: var(--card-text-color);
 }
 
 .card p{
-  color: var(--navbar-color-secondary);
+  color: var(--card-text-color);
 }
 
 
@@ -190,11 +195,6 @@ body {
 }
 
 
-
-
-
-
-
 .title-1 {
   position: relative;
   display: inline-block;
@@ -206,6 +206,17 @@ body {
 
 .title-1::after {
   content: "";
+  display: block;
+  width: 40px;         /* Largura da barra */
+  height: 4px;         /* Altura da barra */
+  background-color: var(--navbar-color-secondary);
+  margin-top: 8px;     /* Espaço entre texto e barra */
+  border-radius: 2px;  /* Cantos arredondados */
+}
+
+
+.project-title::after{
+    content: "";
   display: block;
   width: 40px;         /* Largura da barra */
   height: 4px;         /* Altura da barra */
@@ -340,7 +351,7 @@ body {
  /*botao*/
 .btn-custom {
   background-color: var(--navbar-color-secondary);
-  color: var(--text-color);
+  color: var(--btn-text-color);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -380,7 +391,7 @@ body {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 3px);
+  background: radial-gradient(circle, var(--navbar-color-third) 2px, transparent 3px);
   background-size: 50px 50px;
   animation: moveParticles 20s linear infinite;
   pointer-events: none;
