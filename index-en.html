@@ -6,19 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/logo_eu.jpg" type="image/x-icon" content="IE=edge">
   <title>João Cerqueira | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Source+Code+Pro&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg  fixed-top">
     <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand  nav-link  site-title" href="#" data-section="home">
+      <a class="navbar-brand nav-link site-title" href="#" data-section="home">
         <h3>João Cerqueira_</h3>
       </a>
 
@@ -69,6 +72,7 @@
                   fill="#fff" opacity=".2"></path>
               </svg>
             </a>
+
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <a class="dropdown-item d-flex align-items-center" href="index-pt.html">
@@ -87,7 +91,7 @@
                       d="M14.562,13.529l-5.125-.006v3.431h0c.004,.672,.271,1.307,.753,1.787,.491,.489,1.132,.759,1.805,.759,.684,0,1.328-.267,1.813-.75,.485-.484,.753-1.126,.753-1.808v-3.413Z"
                       fill="#ea3323"></path>
                   </svg>
-                  <span>PT</span>
+                  <span> PT</span>
                 </a>
               </li>
               <li>
@@ -119,7 +123,7 @@
                       d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
                       fill="#fff" opacity=".2"></path>
                   </svg>
-                  <span>EN</span>
+                  <span> EN</span>
                 </a>
               </li>
             </ul>
@@ -139,31 +143,56 @@
           <li class="nav-item">
             <a class="nav-link" href="#" data-section="contacts">Contacts</a>
           </li>
-
-
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Sections -->
-  <section id="home" class="content-section">
+  <section id="home" class="content-section d-flex align-items-center min-vh-100">
     <div class="container py-5">
-      <h1>Hi, I'm João Cerqueira</h1>
-      <h5>I'm a Software Developer</h5>
-
-      <a href="https://github.com/JoaooCerqueira" class="text-reset text-decoration-none"><svg
-          xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-        </svg></a>
-      <a href="https://www.linkedin.com/in/jo%C3%A3o-cerqueira-a39948313/" class="text-reset text-decoration-none"><svg
-          xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-          class="bi bi-linkedin rounded-circle text-primary" viewBox="0 0 16 16">
-          <path
-            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-        </svg></a>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start pt-5 pt-md-0">
+          <h1 class="fw-bold display-4 mb-3">Hi, I'm João Cerqueira</h1>
+          <div class="content__container">
+            <ul class="content__container__list">
+              <li class="content__container__list__item">
+                <h4>Software Engineer</h4>
+              </li>
+              <li class="content__container__list__item">
+                <h4>Outsystems Developer</h4>
+              </li>
+              <li class="content__container__list__item">
+                <h4>Tibco Integration Developer</h4>
+              </li>
+              <li class="content__container__list__item">
+                <h4>Python Developer</h4>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start pt-3">
+            <a href="https://github.com/JoaooCerqueira" target="_blank" class="btn btn-outline-light rounded-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-cerqueira-a39948313/" target="_blank"
+              class="btn btn-outline-primary rounded-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-linkedin rounded-circle" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="images/eu_without.png" alt="João Cerqueira" class="img-fluid rounded-circle shadow"
+            style="max-width: 300px;">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -181,46 +210,85 @@
       <p>I aim to continue growing professionally and to embrace new technological challenges.</p>
 
 
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong><span> Portuguese</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong><span> 23</span></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong><span> Bachelor of Science in Computer
+                Engineering</span></li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
       <h5 class="title-1">Skills</h5>
 
       <div class="row">
         <div class="col-6 pb-3">
-          <span>Outsystems</span>
+          <span>Outsystems <span style="float: right;">9</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
               aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>Python</span>
+          <span>Python <span style="float: right;">8</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>Tibco</span>
+          <span>Tibco <span style="float: right;">7</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>Rest Api</span>
+          <span>Rest Api <span style="float: right;">9</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
           </div>
         </div>
         <div class="col-6 pb-3">
-          <span>SQL Server</span>
+          <span>SQL Server <span style="float: right;">8</span></span>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+              aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
           </div>
         </div>
       </div>
 
+      <h5 class="title-1 pt-4">Languages</h5>
+      <div class="row">
+        <div class="col-6 pb-3">
+          <span>Portuguese <span style="float: right;">10</span></span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="row">
+        </div>
+        <div class="col-6 pb-3">
+          <span>English <span style="float: right;">7</span></span>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <section id="experience" class="content-section d-none">
@@ -231,48 +299,56 @@
         <div class="timeline-2 left-2">
           <div class="card">
             <div class="card-body p-4">
-              <h4 class="fw-bold mb-4"><svg xmlns="http://www.w3.org/2000/svg" width=20 height=20 viewBox="0 0 24 24"
-                  fill="currentColor" class="size-6">
+              <h4 class="fw-bold mb-4 present"><svg xmlns="http://www.w3.org/2000/svg" width=20 height=20
+                  viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd"
                     d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
                     clip-rule="evenodd"></path>
                   <path
                     d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z">
                   </path>
-                </svg> Software Developer</h4>
+                </svg>Software Developer<div class="present-indicator"></div>
+              </h4>
               <h6>Rangel Logistics Solutions</h6>
-              <p class=" mb-4">Dez 2024 - present</p>
+              <p class="mb-4 time"><i class="bi bi-clock"></i> Dez 2024 - now</p>
               <ul>
-                <li><b>Automation</b>-
-                  <p>
-                  <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> OutSystems</div>
-                  <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px; "> SqlServer</div>
-                  <div class="box"><img src="images/GraphAPI.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Microsoft Graph API</div>
-                  <div class="box"><img src="images/ez4u.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 40px;"> EZ4U</div>
-                  <div class="box"><img src="images/Postman.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px; "> Postman</div>
-                  </p>
+                <li>
+                  <div class="card-text"><b>System Integrations </b>- Updating integrations between SAP and external
+                    logistics platforms,
+                    focusing on migration to newer technologies and improving communication between systems.</div>
+                  <div class="technologies">
+                    <div class="box"><img src="images/tibco.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> Tibco </div>
+                    <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> OutSystems</div>
+                    <div class="box"><img src="images/rabbitmq.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> RabbitMQ</div>
+                    <div class="box"><img src="images/Elastic Search.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> Elastic Search</div>
+                    <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px; "> SqlServer</div>
+                    <div class="box"><img src="images/postman.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px; "> Postman</div>
+                  </div>
                 </li>
-                <li><b>System Integrations </b>-
-                  <p>
-                  <div class="box"><img src="images/tibco.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Tibco</div>
-                  <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> OutSystems</div>
-                  <div class="box"><img src="images/rabbitmq.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> RabbitMQ</div>
-                  <div class="box"><img src="images/Elastic Search.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Elastic Search</div>
-                  <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px; "> SqlServer</div>
-                  <div class="box"><img src="images/Postman.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px; "> Postman</div>
-                  </p>
+                <li>
+                  <div class="card-text pt-3"><b>Order Management Software </b>- Development of an application for daily
+                    order management,
+                    integrating automated customer communication features via SMS and email, automatic currency exchange
+                    calculation, among other features.</div>
+                  <div class="technologies">
+                    <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> OutSystems</div>
+                    <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px; "> SqlServer</div>
+                    <div class="box"><img src="images/GraphAPI.png" class="card-img-top" alt="..."
+                        style="height: 24px;  width: 28px;"> Microsoft Graph API</div>
+                    <div class="box"><img src="images/ez4u.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 40px;"> EZ4U</div>
+                    <div class="box"><img src="images/postman.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px; "> Postman</div>
                 </li>
+
               </ul>
 
 
@@ -282,58 +358,64 @@
         <div class="timeline-2 right-2">
           <div class="card">
             <div class="card-body p-4">
-              <h4 class="fw-bold mb-4"><svg xmlns="http://www.w3.org/2000/svg" width=20 height=20 viewBox="0 0 24 24"
-                  fill="currentColor" class="size-6">
+              <h4 class="fw-bold mb-4 present"><svg xmlns="http://www.w3.org/2000/svg" width=20 height=20
+                  viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd"
                     d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
                     clip-rule="evenodd"></path>
                   <path
                     d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z">
                   </path>
-                </svg> Professional Internship</h4>
+                </svg>Professional Internship</h4>
               <h6>Rangel Logistics Solutions</h6>
-              <p class="mb-4">Out 2023 - Jul 2024</p>
+              <p class="mb-4 time"><i class="bi bi-clock"></i> Out 2023 - Jul 2024</p>
               <p class="mb-0">
 
               <ul>
                 <li>
-                  <b>Database Replications</b> - Development of a solution to replicate data in real time from a
-                  production server to a new server.
-                  <p>
-                  <div class="box"><img src="images/symmetricDs.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 20px;"> SymmetricDS</div>
-                  <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px; "> SqlServer</div>
-                  </p>
+                  <div class="card-text">
+                    <b>Automation with IA</b>- Development of a tool for data classification and extraction,
+                    facilitating the automatic filling in of information necessary for the creation of spots (transport
+                    quotation requests)
+                  </div>
+                  <div class="technologies">
+                    <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> OutSystems</div>
+                    <div class="box"><img src="images/openai.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> OpenAi</div>
+                    <div class="box"><img src="images/GraphAPI.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 28px;"> Microsoft Graph API</div>
+                    <div class="box"><img src="images/blujay.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> BluJay</div>
+                  </div>
                 </li>
                 <li>
-                  <b>ChatBot</b> - Implementação de um chatbot capaz de processar um arquivo Excel, permitindo ao
-                  utilizador realizar perguntas sobre os dados contidos.
-                  <p>
-                  <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Python</div>
-                  <div class="box"><img src="images/streamlit.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Streamlit</div>
-                  <div class="box"><img src="images/openai.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24 px;"> OpenAi</div>
-                  <div class="box"><img src="images/docker.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> Docker</div>
-                  </p>
+                  <div class="card-text  pt-3">
+                    <b>ChatBot</b> - Implementation of a chatbot capable of processing an Excel file, allowing the user
+                    to ask questions about the imported data.
+                  </div>
+                  <div class="technologies">
+                    <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> Python</div>
+                    <div class="box"><img src="images/streamlit.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> Streamlit</div>
+                    <div class="box"><img src="images/openai.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24 px;"> OpenAi</div>
+                    <div class="box"><img src="images/docker.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px;"> Docker</div>
+                  </div>
                 </li>
                 <li>
-                  <b>Automation with IA</b>- Desenvolvimento de uma ferramenta para classificação e extração de dados,
-                  facilitando o preenchimento automático de informações necessárias para a criação de spots (pedidos de
-                  cotação de transportes).
-                  <p>
-                  <div class="box"><img src="images/outsystems.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> OutSystems</div>
-                  <div class="box"><img src="images/openai.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> OpenAi</div>
-                  <div class="box"><img src="images/GraphAPI.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 28px;"> Microsoft Graph API</div>
-                  <div class="box"><img src="images/blujay.png" class="card-img-top" alt="..."
-                      style="height: 24px; width: 24px;"> BluJay</div>
-                  </p>
+                  <div class="card-text  pt-3">
+                    <b>Database replication</b> - Development of a solution to replicate data in real time from a
+                    production server to a new server.
+                  </div>
+                  <div class="technologies">
+                    <div class="box"><img src="images/symmetricDs.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 20px;"> SymmetricDS</div>
+                    <div class="box"><img src="images/sql server.png" class="card-img-top" alt="..."
+                        style="height: 24px; width: 24px; "> SqlServer</div>
+                  </div>
                 </li>
               </ul>
 
@@ -344,28 +426,32 @@
         <div class="timeline-2 left-2">
           <div class="card">
             <div class="card-body p-4">
-              <h4 class="fw-bold mb-4"><svg xmlns="http://www.w3.org/2000/svg" width=20 height=20 viewBox="0 0 24 24"
-                  fill="currentColor" class="size-6">
+              <h4 class="fw-bold mb-4 present"><svg xmlns="http://www.w3.org/2000/svg" width=20 height=20
+                  viewBox="0 0 24 24" fill="currentColor" class="size-6">
                   <path fill-rule="evenodd"
                     d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
                     clip-rule="evenodd"></path>
                   <path
                     d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z">
                   </path>
-                </svg> Curricular Internship</h4>
+                </svg>Curricular internship</h4>
               <h6>Rangel Logistics Solutions</h6>
-              <p class="mb-4">Mar 2023 - Jul 2023</p>
+              <p class="mb-4 time"><i class="bi bi-clock"></i> Mar 2023 - Jul 2023</p>
 
               <p class="mb-0">
               <ul>
-                <li><b>Ticket Classification</b> - Processamento do texto de tickets e de linguagem natural
-                  para encontrar palavras chaves e associar a empresa correspondente ao ticket.</li>
-                <p>
-                <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
-                    style="height: 24px; width: 24x;"> Python</div>
-                <div class="box"><img src="images/powerBI.png" class="card-img-top" alt="..."
-                    style="height: 24px; width: 24x;">PowerBi</div>
-                </p>
+                <li>
+                  <div class="card-text">
+                    <b>Ticket classification</b> - Processing of ticket text and natural language to find keywords and
+                    associate the corresponding company with the ticket.
+                  </div>
+                </li>
+                <div class="technologies">
+                  <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24x;"> Python</div>
+                  <div class="box"><img src="images/powerBI.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24x;">PowerBi</div>
+                </div>
               </ul>
               </p>
             </div>
@@ -385,14 +471,24 @@
           <div class="col-sm-4">
             <div class="card">
               <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style" alt="..." style="height: 18rem;">
+                <img src="images/portfolio.png" class="card-img-top img-style p-4" alt="..."">
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Portfólio</h5>
+              <div class=" card-body">
+                <h4 class="card-title">Portfólio</h4>
                 <p class="card-text">I present my portfolio developed with HTML, CSS, JavaScript, and Bootstrap. The
                   website is fully responsive, supports multiple languages, and adapts to light or dark mode, ensuring a
                   pleasant experience on any device. It was created to clearly present my professional background,
                   skills, and projects.</p>
+                <div class="technologies">
+                  <div class="box"><img src="images/html.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">HTML</div>
+                  <div class="box"><img src="images/Bootstrap.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">Bootstrap</div>
+                  <div class="box"><img src="images/JavaScript.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">JavaScript</div>
+                  <div class="box"><img src="images/CSS.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">CSS</div>
+                </div>
                 <a href="https://github.com/JoaooCerqueira/Portfolio" class="btn btn-primary btn-custom">Learn more</a>
               </div>
             </div>
@@ -400,106 +496,72 @@
           <div class="col-sm-4">
             <div class="card">
               <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style" alt="..." style="height: 18rem;">
+                <img src="images/Rental-car-Python.png" class="card-img-top img-style p-4" alt="..."
+                  style="height: 18rem;">
               </div>
               <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Description</p>
-                <a href="#" class="btn btn-primary btn-custom">Learn more</a>
+                <h4 class="card-title">Rental Car</h4>
+                <p class="card-text">I developed a complete web application for vehicle reservation management using
+                  Python, Django, and an SQLite database. The platform allows different rental companies to make their
+                  vehicles available to registered or anonymous customers. The system includes search features by
+                  location, vehicle type and dates, as well as vehicle, booking and user management. It supports
+                  different user profiles (customer, employee, manager and administrator), each with dedicated
+                  permissions and interfaces. The system implements authentication and authorisation, ensuring adequate
+                  control of permissions by profile.</p>
+                <div class="technologies">
+                  <div class="box"><img src="images/python.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">Python</div>
+                  <div class="box"><img src="images/django.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">Django</div>
+                  <div class="box"><img src="images/sqlite.png" class="card-img-top" alt="..."
+                      style="height: 24px; width: 24px;">SqLite</div>
+                </div>
+                <a href="https://github.com/JoaooCerqueira/Projeto_RentalCar" class="btn btn-primary btn-custom">Learn
+                  more</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Description</p>
-                <a href="#" class="btn btn-primary btn-custom">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-3">
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Description</p>
-                <a href="#" class="btn btn-primary btn-custom">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Description</p>
-                <a href="#" class="btn btn-primary btn-custom">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="img-div">
-                <img src="images/teste.png" class="card-img-top img-style" alt="..." style="height: 18rem;">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Description</p>
-                <a href="#" class="btn btn-primary btn-custom">Learn more</a>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
   </section>
 
   <section id="contacts" class="content-section d-none">
-
-    <div class="container-fluid py-5 ">
+    <div class="container py-5 ">
       <div class="row">
         <div class="col-12 col-lg-4">
           <h2 class="title-1">Contacts</h2>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope"
-              viewBox="0 0 16 16">
+          <div class="pb-3 pt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-envelope icon-contacts" viewBox="0 0 16 16">
               <path
                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
             </svg>
-            <a class="text-reset text-decoration-none"
+            <a class="text-reset text-decoration-none p-2"
               href="mailto:joao.p.caldas.cerqueira@gmail.com">joao.p.caldas.cerqueira@gmail.com</a>
           </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone"
-              viewBox="0 0 16 16">
+          <div class="pb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-telephone icon-contacts" viewBox="0 0 16 16">
               <path
                 d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
             </svg>
-            +351 933 372 373
+            <span class="p-2">+351 933 372 373</span>
           </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class=" bi bi-geo-alt"
-              viewBox="0 0 16 16">
+          <div class="pb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class=" bi bi-geo-alt icon-contacts" viewBox="0 0 16 16">
               <path
                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
               <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
             </svg>
-            Maia, Porto
+            <span class="p-2">Maia, Porto</span>
           </div>
         </div>
 
         <div class="col-12 col-lg-8">
-          <h2 class="title-1">Send me a Message:</h2>
+          <h2 class="title-1">Send me a message:</h2>
           <div class="container-sm">
             <form class="row g-3 needs-validation" novalidate>
               <div class="col-md-5 ">
