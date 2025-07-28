@@ -553,17 +553,19 @@
         <div class="col-12 col-lg-8">
           <h2 class="title-1">Envia uma mensagem:</h2>
           <div class="container-sm">
-            <form class="row g-3 needs-validation" novalidate>
+
+            <form class="row g-3 needs-validation" novalidate action="https://formsubmit.co/el/picibo" method="POST">
               <div class="col-md-5 ">
+                <input type="hidden" name="_captcha" value="false">
                 <label for="validationCustom01" class="form-label">Nome</label>
-                <input type="text" class="form-control input-background" id="validationCustom01" required>
+                <input type="text" name="name" class="form-control input-background" id="validationCustom01" required>
                 <div class="invalid-feedback">
                   Por favor insira um nome!
                 </div>
               </div>
               <div class="col-md-7">
                 <label for="validationCustom02" class="form-label">Email</label>
-                <input type="email" class="form-control input-background" id="validationCustom02" required>
+                <input type="email" name="email" class="form-control input-background" id="validationCustom02" required>
                 <div class="invalid-feedback">
                   Por favor insira um email válido!
                 </div>

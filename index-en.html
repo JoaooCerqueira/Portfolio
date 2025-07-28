@@ -563,24 +563,25 @@
         <div class="col-12 col-lg-8">
           <h2 class="title-1">Send me a message:</h2>
           <div class="container-sm">
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row g-3 needs-validation" novalidate action="https://formsubmit.co/el/picibo" method="POST">
               <div class="col-md-5 ">
                 <label for="validationCustom01" class="form-label">Name</label>
-                <input type="text" class="form-control input-background" id="validationCustom01" required>
+                <input type="text" name="name" class="form-control input-background" id="validationCustom01" required>
                 <div class="invalid-feedback">
                   Please enter a name!
                 </div>
               </div>
               <div class="col-md-7">
                 <label for="validationCustom02" class="form-label">Email</label>
-                <input type="email" class="form-control input-background" id="validationCustom02" required>
+                <input type="email" name="email" class="form-control input-background" id="validationCustom02" required>
                 <div class="invalid-feedback">
                   Please enter a valid email!
                 </div>
               </div>
               <div class="col-md-12">
                 <label for="validationCustom03" class="form-label">Message</label>
-                <textarea class="form-control input-background" id="validationCustom03" rows="3" required></textarea>
+                <textarea class="form-control input-background" name="message" id="validationCustom03" rows="3"
+                  required></textarea>
                 <div class="invalid-feedback">
                   Please enter a message!
                 </div>
