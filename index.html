@@ -554,8 +554,7 @@
           <h2 class="title-1">Envia uma mensagem:</h2>
           <div class="container-sm">
 
-            <form target="_blank" class="row g-3 needs-validation" action="https://formsubmit.co/el/picibo"
-              method="POST" novalidate>
+            <form class="row g-3 needs-validation" action="https://formsubmit.co/el/picibo" method="POST" novalidate>
               <div class="col-md-5 ">
 
                 <label for="validationCustom01" class="form-label">Nome</label>
@@ -573,11 +572,14 @@
               </div>
               <div class="col-md-12">
                 <label for="validationCustom03" class="form-label">Mensagem</label>
-                <textarea class="form-control input-background" id="validationCustom03" rows="3" required></textarea>
+                <textarea name="message" class="form-control input-background" id="validationCustom03" rows="3"
+                  required></textarea>
+
                 <div class="invalid-feedback">
                   Por favor insira uma mensagem!
                 </div>
               </div>
+              <input type="hidden" name="_captcha" value="false">
               <div class="col-12">
                 <button class="btn btn-primary btn-custom" type="submit">Enviar</button>
               </div>
