@@ -555,8 +555,10 @@
           <h2 class="title-1">Envia uma mensagem:</h2>
           <div class="container-sm">
 
-            <form class="row g-3 needs-validation" action="https://formsubmit.co/20d01dbf8312cca1ba656ee668424377"
-              method="POST" novalidate>
+            <form id="contact-form" class="row g-3 needs-validation" novalidate>
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_captcha" value="false">
+
               <div class="col-md-5 ">
                 <label for="validationCustom01" class="form-label">Nome</label>
                 <input type="text" name="name" class="form-control input-background" id="validationCustom01" required>
@@ -564,6 +566,7 @@
                   Por favor insira um nome!
                 </div>
               </div>
+
               <div class="col-md-7">
                 <label for="validationCustom02" class="form-label">Email</label>
                 <input type="email" name="email" class="form-control input-background" id="validationCustom02" required>
@@ -571,22 +574,29 @@
                   Por favor insira um email válido!
                 </div>
               </div>
+
               <div class="col-md-12">
                 <label for="validationCustom03" class="form-label">Mensagem</label>
                 <textarea name="message" class="form-control input-background" id="validationCustom03" rows="3"
                   required></textarea>
-
                 <div class="invalid-feedback">
                   Por favor insira uma mensagem!
                 </div>
+              </div>
+
+              <!-- MENSAGEM DE SUCESSO -->
+              <div id="form-success" class="col-md-12" style="display:none; color: green;">
+                Obrigado! A tua mensagem foi enviada com sucesso.
               </div>
 
               <div class="col-12">
                 <button class="btn btn-primary btn-custom" type="submit">Enviar</button>
               </div>
             </form>
+
           </div>
         </div>
+
       </div>
     </div>
   </section>

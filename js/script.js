@@ -88,3 +88,40 @@ updateIcon();
 
 
 
+
+
+
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('form-success');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formsubmit.co/20d01dbf8312cca1ba656ee668424377", {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+        form.classList.remove('was-validated');
+        successMessage.style.display = 'block';
+      } else {
+        alert("Erro ao enviar o formulário.");
+      }
+    } catch (error) {
+      alert("Erro de rede ao tentar enviar.");
+    }
+  });
+
