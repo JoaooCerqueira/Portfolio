@@ -748,3 +748,9 @@ body {
 }
 
 /* End Lista do que eu sou */
+
+/* Formulario styles */
+.form-success {
+  display: none;
+  color: green;
+}
